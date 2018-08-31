@@ -1,0 +1,78 @@
+/*
+	_content.css
+*/
+
+
+.stub{
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	.logo-content{
+		width: 100%;
+	}
+	.stub-info{
+		background-color: rgba(white, 0.95);
+	}
+
+	.stub-info-footer{
+		width: 100%;
+		margin: 10px 0;
+	}
+	@media (max-width: 1440px) {
+		font-size: 0.9em;
+	}
+	@media (max-width: 991px) {
+		.logo-content{
+			padding-left: 45px;
+			padding-right: 45px;
+		}
+	}
+	@media (min-width: 992px) {
+		height: 100vh;
+		width: 100vw;
+		.logo-content{
+			margin: 5vh 0;
+		}
+		.stub-info{
+			height: 100vh;
+		}
+		.stub-info-contact{
+			margin-top: 5vh;
+		}
+		.stub-info-footer{
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}
+
+.stub-info-contact, .stub-info-content{
+	padding: 0 60px;
+}
+
+
+.stub-content{
+	font-size: 1.2em;
+	background-color: rgba(black, 0.5);
+	text-align: center;
+	h1{
+		font-weight: 300;
+		font-size: 60px;
+	}
+
+	@media (min-width: 992px) {
+		height: 100vh;
+		.entry-header{
+			top: 50%;
+			position: absolute;	
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@media (max-width: 991px ) {
+		.entry-header{
+			padding: 60px 15px;
+		}
+	}
+}
